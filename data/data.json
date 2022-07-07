@@ -1,0 +1,88 @@
+{
+    "products" :[
+        {
+            "id" : 1,
+            "title": "Muay Thai Gloves",
+            "type": "gloves",
+            "description": "The Everlast Gloves are perfect for taking on your opponent.",
+            "filename": "https://images.sportsdirect.com/images/products/76216644_l.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 55,
+            "rating": 4
+        },
+        {
+            "id" : 2,
+            "title": "Muaty Thai Shin Guards",
+            "type": "shin quards",
+            "description": "Having Muay Thai Shin Guards are an essential requirement for you to properly train.",
+            "filename": "https://minotaurfightstore.co.uk/wp-content/uploads/2021/10/Venum-Challenger-Kids-Shin-Guards-Black-White-1-768x922.jpg",
+            "height": 450,
+            "width": 299,
+            "price": 60,
+            "rating": 4
+          }, {
+            "id" : 3,
+            "title": "Venum Shorts",
+            "type": "shorts",
+            "description": "The brand's iconic model, the Giant Muay Thai Shorts are a must-have.",
+            "filename": "https://euro.venum.com/media/catalog/product/cache/3d6373dfdbd8bf7042581a31874a0831/3/9/3940974c80323eb507a986a1cf8dd92681c6b068_SHORT_MUAYTHAI_GIANT_CAMO_KHAKI_GOLD_01.jpg",
+            "height": 450,
+            "width": 299,
+            "price": 18.95,
+            "rating": 3
+          }, {
+            "id" : 4,
+            "title": "Venum Gum Shield",
+            "type": "gum shield",
+            "description": "Carefully designed to provide perfect fit.",
+            "filename": "https://contents.mediadecathlon.com/p2206177/k$b0bc7747ccf0e76585b7bd03d54df2c5/gel-mouthguard-challenger.jpg?&f=800x800",
+            "height": 600,
+            "width": 399,
+            "price": 15,
+            "rating": 4
+          },
+          {
+            "id" : 5,
+            "title": "RDX T1 Pad",
+            "type": "pad",
+            "description": "Leather X curved Thai Pad",
+            "filename": "https://media.rdxsports.com/catalog/product/cache/69f3b2992c75192310a5e03d50a0d871/r/d/rdx_thai_white_thai_pad_2_.jpg",
+            "height": 450,
+            "width": 675,
+            "price": 155,
+            "rating": 4
+          },
+          {
+            "id" : 6,
+            "title": "JIU JITSU Belt",
+            "type": "belt",
+            "description": "BJJ Color Belt.",
+            "filename": "https://i.etsystatic.com/26131284/r/il/b67a0f/2679405798/il_794xN.2679405798_cg2d.jpg",
+            "height": 450,
+            "width": 301,
+            "price": 190,
+            "rating": 0
+          }, {
+            "id" : 7,
+            "title": "JIU JITSU GI",
+            "type": "kimono",
+            "description": "Custom name/logo high quality black kimono.",
+            "filename": "https://cdn.shopify.com/s/files/1/0257/1780/1040/products/SJC-1028_720x.jpg?v=1614375385",
+            "height": 450,
+            "width": 301,
+            "price": 190,
+            "rating": 0
+          },{
+            "id" : 8,
+            "title": "Kimono",
+            "type": "kimono",
+            "description": "A 100% polyester lining inside jacket.",
+            "filename": "https://euro.venum.com/media/catalog/product/cache/3d6373dfdbd8bf7042581a31874a0831/0/4/0401631e58e97408dd268c3ce3461d177cc08ebc_BJJ_GI_CLASSIC2.0_WHITE_1500_02.jpg",
+            "height": 450,
+            "width": 675,
+            "price": 155,
+            "rating": 4
+          }
+    ]
+}
