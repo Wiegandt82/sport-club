@@ -1,0 +1,117 @@
+import { Button, Container, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Rating, TextField } from '@mui/material'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
+export default function CreateProduct() {
+    const [title, setTitle] = useState(''); 
+    const [description, setDescription] = useState(''); 
+    const [category, setCategory] = useState('gloves'); 
+    const [rating, setRating] = useState(0); 
+    const [price, setPrice] = useState(0); 
+    const [filename, setFilename] = useState(''); 
+    const navigateTo = useNavigate(); 
+
+
+    const handleProductCreation = (e) =>
+    {
+        e.preventDefault(); 
+        if (title && description && category && price)
+        {
+            console.log({title, description, category, rating, price, filename}); 
+            fetch('http://localhost:8000/products',{
+                method: 'POST',
+                headers: {"content-type":"application/json"},
+                body: JSON.stringify({title, description, category, rating, price, filename})
+
+            }).then ( () => navigateTo('/Shop'))
+        }
+    }
+  return (
+    <Container maxWidth='md' sx={{mt:20}}>
+
+
+        <FormLabel> Add new Product</FormLabel>
+        <form noValidate  onSubmit={handleProductCreation}> 
+        <TextField 
+            label='Product Name'
+            onChange={ (e) => setTitle(e.target.value)}
+            fullWidth
+            required
+            autoFocus
+            variant='outlined'
+            color="info">
+
+            </TextField>
+
+            <TextField 
+                label='Product Description'
+                onChange={(e) => setDescription(e.target.value)}
+                required
+
+                fullWidth
+                variant='outlined'
+                color='info'
+                multiline
+                rows={6}>
+
+                </TextField>
+                
+                <TextField 
+                label='Price'
+                type='number'
+                onChange={(e) => setPrice(e.target.value)}
+                required
+
+                fullWidth
+                variant='outlined'
+                color='info'
+                >
+
+                </TextField>
+                <TextField
+                    label='Image URL Address'
+                    onChange={(e) => setFilename(e.target.value)}
+
+                    fullWidth
+                    variant='outlined'
+                    
+                     color='info'>
+
+                    </TextField>
+
+                <FormLabel> Select the product category</FormLabel>
+
+                <FormControl fullWidth>
+                    <RadioGroup 
+                        defaultValue='coffee' 
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}
+                        >
+                                <FormControlLabel control={ <Radio />} label='Gloves' value='gloves'/> 
+                                <FormControlLabel control={ <Radio />} label='Shin guards' value='shin guards'/> 
+                                <FormControlLabel control={ <Radio />} label='Shorts' value='shorts'/> 
+                                <FormControlLabel control={ <Radio />} label='Gum Shield' value='gum shield'/> 
+                                <FormControlLabel control={ <Radio />} label='Pad' value='pad'/> 
+                                <FormControlLabel control={ <Radio />} label='Belt' value='belt'/>
+                                <FormControlLabel control={ <Radio />} label='Kimono' value='kimono'/>
+                        
+                    </RadioGroup>
+
+                    
+                </FormControl >
+                <Rating
+                    name="simple-controlled"
+                    value={rating}
+                    onChange=
+                     {(event, rating) => {
+                        setRating(rating);
+                      }}
+                    />
+
+            <Button type='submit' fullWidth variant='outlined'>Submit</Button>
+            <Button type='reset' fullWidth variant='outlined'>Reset</Button>
+
+        </form>
+    </Container>
+  )
+}

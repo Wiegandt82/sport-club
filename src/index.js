@@ -15,6 +15,7 @@ import SignUp from './components/SignUp';
 import AppLayout from './components/AppLayout';
 import Shop from './components/Shop';
 import ContactUs from './components/ContactUs';
+import CreateProduct from './components/CreateProduct';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,6 +34,7 @@ root.render(
         <Route path="SignUp" element={<SignUp />} />
         <Route path='Shop' element={<Shop />} />
         <Route path='ContactUs' element={<ContactUs />} />
+        <Route path='CreateProduct' element={<CreateProduct />} />
         
       </Routes>
     </AppLayout>

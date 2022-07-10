@@ -11,7 +11,7 @@ export default function ContactUs() {
 
         e.preventDefault(); 
 
-        console.log("Form submited:  ");
+        console.log("Form submitted:  ");
         console.log({name, email, subject, message});
     }
   return (
