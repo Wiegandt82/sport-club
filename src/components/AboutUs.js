@@ -6,7 +6,7 @@ export default function AboutUs() {
     <Container component ="main" maxWidth='md'>
 
       <CssBaseline />
-        <Typography component="h2" variant="h4" color="secondary" align="center" sx={{mt:10}}>About Us</Typography>
+        <Typography component="h2" variant="h4" color="secondary" align="center" sx={{mt:10}}>WILD GEESE Martial Arts</Typography>
         
         <Grid container spacing={1} >
           <Grid item >
