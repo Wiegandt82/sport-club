@@ -58,11 +58,11 @@ export default function AppLayout({children}) {
 
           disablePadding
           >
-            <ListItemButton onClick={ () => {navigate('/AboutUs'); setpageTitle('AboutUs')}}>
+            <ListItemButton onClick={ () => {navigate('/AboutUs'); setpageTitle('About Us')}}>
               <ListItemIcon>
                 <InfoIcon />
               </ListItemIcon>
-              <ListItemText primary={'AboutUs'} />
+              <ListItemText primary={'About Us'} />
             </ListItemButton>
           </ListItem>
 

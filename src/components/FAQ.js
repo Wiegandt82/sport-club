@@ -11,6 +11,21 @@ export default function FAQ() {
     <Container component ="main" maxWidth='md'>
 
     <Box sx={{mt:10}}>
+    <Accordion >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>What are the benefits of trainings?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Positive effects from sport activity are weight lost, personal development and improvement in mental health.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
       <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -56,9 +71,102 @@ export default function FAQ() {
             You need to have above 10 years old. 
           </Typography>
         </AccordionDetails>
+      </Accordion>
 
-        
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Can I start trainings out of shape?</Typography>
+        </AccordionSummary>
 
+        <AccordionDetails>
+          <Typography>
+            There is never a bad time to start training. Our professional coaches will make sure to adjust training for your needs. 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Should I have a meal before training?</Typography>
+        </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography>
+            Avoid eating 2 hours before training. 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Should I bring water?</Typography>
+        </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography>
+            We recommend to bring your own water, as you will need to rehydrate yourself after training. 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Are there separate groups for man and females?</Typography>
+        </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography>
+            Nope man and females train on the same sessions. 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>What if I get injured?</Typography>
+        </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography>
+            As in every activity injuries happen. We have best facilities and coaches which will help you to avoid and if it happens we will assist you. 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Why personal training?</Typography>
+        </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography>
+            A personal trainer can support you with personalized training to reach your fitness and technique goals. 
+          </Typography>
+        </AccordionDetails>
       </Accordion>
     </Box>
     </Container>
