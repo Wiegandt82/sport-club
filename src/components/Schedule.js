@@ -85,17 +85,20 @@ export default function CustomizedTables() {
             <CardMedia
               component="img"
               height="350"
-              image="https://fightworxtaunton.co.uk/wp-content/uploads/2017/01/Sonny-300x300.jpg"
-              alt="coach"
+              image="https://twg2022.com/wp-content/uploads/2020/04/Muaythai_Gallery_3.jpg"
+              alt="Muay Thai match"
               />
 
             <CardContent>
               <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
-                Santiago Johnes
+                Muay Thai
               </Typography>
               <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                Muay Thai has a long history in Thailand and is the country’s national sport. 
+                Referred to as “The Art of the Eight Limbs”. The hands, shins, elbows, 
+                and knees are all used extensively in this art. In Muay Thai, one has the ability to execute strikes using 
+                eight “points of contact,” as opposed to “two points” (fists) in Western boxing and “four points” (fists, feet) 
+                used in other martial arts.
               </Typography>
             </CardContent>
           </Card>
@@ -106,17 +109,19 @@ export default function CustomizedTables() {
             <CardMedia
               component="img"
               height="350"
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXm6cOj2Jm0Nj5RnHAWwk3OdLNujutk9jw4wDuUim3akk2cVjAQIDFovW_JYk6lyU62jo&usqp=CAU"
-              alt="coach"
+              image="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-brazilian-jiu-jitsu-21abb64f-ddd9-4ce1-9e37-cfebc277285a.jpg"
+              alt="Brazilian Jiu Jitsu match"
               />
 
             <CardContent>
               <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
-                Jon Jones
+                Brazilian Jiu Jitsu
               </Typography>
               <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+              It is often claimed that BJJ is a development of traditional Japanese Jujutsu.
+              It promotes the principle that a smaller, weaker person using leverage and proper technique can successfully 
+              defend against a bigger, stronger assailant using joint-locks and chokeholds to defeat an opponent.
+              BJJ can be trained for self defense, sport grappling tournaments and mixed martial arts competition.
               </Typography>
             </CardContent>
           </Card>

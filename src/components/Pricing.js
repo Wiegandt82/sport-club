@@ -6,11 +6,11 @@ export default function Pricing() {
     <Container>
       <Grid container 
         justifyContent="center"
-        spacing={2}
-        marginTop={10}>
+        spacing={1}
+        marginTop={8}>
           
         <Grid item xs={12} md={6} lg={4}>
-          <Card sx={{maxWidth:350}}>
+          <Card sx={{maxWidth:330}}>
             <CardMedia
               component="img"
               height="350"
@@ -41,7 +41,7 @@ export default function Pricing() {
         </Grid>
 
         <Grid item xs={12} md={6} lg={4}>
-          <Card sx={{maxWidth:350}}>
+          <Card sx={{maxWidth:330}}>
             <CardMedia
               component="img"
               height="350"
@@ -69,11 +69,11 @@ export default function Pricing() {
 
       <Grid container 
         justifyContent="center"
-        spacing={2}
-        marginTop={10}>
+        spacing={1}
+        marginTop={2}>
           
         <Grid item xs={12} md={6} lg={4}>
-          <Card sx={{maxWidth:350}}>
+          <Card sx={{maxWidth:330}}>
             <CardMedia
               component="img"
               height="350"
@@ -99,7 +99,7 @@ export default function Pricing() {
         </Grid>
 
         <Grid item xs={12} md={6} lg={4}>
-          <Card sx={{maxWidth:350}}>
+          <Card sx={{maxWidth:330}}>
             <CardMedia
               component="img"
               height="350"

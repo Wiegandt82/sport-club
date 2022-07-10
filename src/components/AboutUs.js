@@ -4,10 +4,37 @@ import React from 'react'
 export default function AboutUs() {
   return (
     <Container component ="main" maxWidth='md'>
-      <CssBaseline />
-        <Typography component="h2" variant="h4" color="secondary" align="center" sx={{mt:10}}>ABOUT US</Typography>
 
+      <CssBaseline />
+        <Typography component="h2" variant="h4" color="secondary" align="center" sx={{mt:10}}>About Us</Typography>
+        
         <Grid container spacing={1} >
+          <Grid item >
+            <Typography align="center">
+              Wild Geese is first and foremost about the will to train, to strive, to work.
+              All our instructors are highly skilled practitioners of their respective arts.
+            </Typography>
+            
+            <br/>
+
+            <Typography align="center">
+              It’s about being willing to put ego aside and learn.
+              It’s not about collecting accolades, although our instructors and students have plenty, it’s about collecting experience, knowledge, scars and camaraderie. 
+            </Typography>
+            
+            <br />
+            
+            <Typography align="center">
+              Each has studied, trained and competed at the highest level and have all trained up students that have done the same.
+            </Typography>
+            
+            <br />
+
+            <Typography align="center">
+              The highest level of instructor is one who creates students better than he is.
+              Ours have done so and will continue to do so.
+            </Typography>
+          </Grid>
           
           <Grid item xs={12} md={6} lg={4}>
             <Card sx={{maxWidth:350}}>
@@ -25,8 +52,7 @@ export default function AboutUs() {
                   Santiago Johnes
                 </Typography>
                 <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
+                The founding member of Wild Geese Martial Arts. Since taking up martial arts back in 1985 he has trained in several martial styles, most notably Muay Thai.
                 </Typography>
               </CardContent>
             </Card>
@@ -48,8 +74,8 @@ export default function AboutUs() {
                   Jon Jones
                 </Typography>
                 <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
+                Started his Muay Thai training in 1990. He continued to train up the ranks until college.
+                He eventually returned to training, as a way of relieving the stress of his hectic job. 
                 </Typography>
               </CardContent>
             </Card>
@@ -71,8 +97,7 @@ export default function AboutUs() {
                   Mick Nilson
                 </Typography>
                 <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
+                  Practices what he preaches which is reflected in his impressive achievements in Brazilian Jiu Jitsu. He is a fully qualified nutrition coach with a passion for food.
                 </Typography>
               </CardContent>
             </Card>
