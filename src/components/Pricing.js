@@ -16,7 +16,7 @@ export default function Pricing() {
               height="350"
               image="https://cdn.onefc.com/wp-content/uploads/2019/06/Petchmorakot-AAA_8563.jpg"
               alt="coach"
-              />
+            />
 
             <CardContent>
               <Typography 
