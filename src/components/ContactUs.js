@@ -27,9 +27,20 @@ export default function ContactUs() {
                 >
             </TextField>
 
+            <TextField
+                label='Email'
+                name='email'
+                fullWidth
+                required
+                sx={{ mt:2 }}
+                onCHange={(e) => {setEmail(e.target.value); console.log(email)}}
+                >
+            </TextField>
+
             <TextField 
                 label='Subject' 
                 name='subject' 
+                required
                 fullWidth
                 sx={{ mt:2 }}
                 onChange={(e) => setSubject(e.target.value)}
@@ -40,6 +51,7 @@ export default function ContactUs() {
                 label='Message' 
                 name='message' 
                 fullWidth 
+                required
                 multiline 
                 rows={6}
                 sx={{ mt:2 }}

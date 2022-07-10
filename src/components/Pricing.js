@@ -14,7 +14,7 @@ export default function Pricing() {
             <CardMedia
               component="img"
               height="350"
-              image="https://cdn.onefc.com/wp-content/uploads/2019/06/Petchmorakot-AAA_8563.jpg"
+              image="https://londonfightfactory.com/wp-content/uploads/2021/01/Muay-Thai-Boxing-Class-Sparring-Partner-Work.jpg"
               alt="coach"
             />
 
@@ -45,7 +45,7 @@ export default function Pricing() {
             <CardMedia
               component="img"
               height="350"
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXm6cOj2Jm0Nj5RnHAWwk3OdLNujutk9jw4wDuUim3akk2cVjAQIDFovW_JYk6lyU62jo&usqp=CAU"
+              image="https://youjiujitsu.com/wp-content/uploads/2019/05/15525975332_8379ec7aa9_b.jpg"
               alt="coach"
               />
 
@@ -53,9 +53,14 @@ export default function Pricing() {
               <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
                 Monthly Subscription
               </Typography>
-              <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+
+              <Typography 
+              variant="h6" 
+              color="text.secondary" 
+              textAlign={'center'}
+              style={{ color: '#ff0000'}}
+              >
+                100 Euro
               </Typography>
             </CardContent>
           </Card>
@@ -72,7 +77,7 @@ export default function Pricing() {
             <CardMedia
               component="img"
               height="350"
-              image="https://fightworxtaunton.co.uk/wp-content/uploads/2017/01/Sonny-300x300.jpg"
+              image="https://www.tigermuaythai.com/wp-core/wp-content/uploads/2016/03/tmt-class-muay-thai-intermediate-01.jpg"
               alt="coach"
               />
 
@@ -80,9 +85,14 @@ export default function Pricing() {
               <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
                 Yearly Subscription
               </Typography>
-              <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+
+              <Typography 
+              variant="h6" 
+              color="text.secondary" 
+              textAlign={'center'}
+              style={{ color: '#ff0000'}}
+              >
+                1000 Euro
               </Typography>
             </CardContent>
           </Card>
@@ -101,9 +111,14 @@ export default function Pricing() {
               <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
                 Individual Session
               </Typography>
-              <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+
+              <Typography 
+              variant="h6" 
+              color="text.secondary" 
+              textAlign={'center'}
+              style={{ color: '#ff0000'}}
+              >
+                50 Euro
               </Typography>
             </CardContent>
           </Card>

@@ -17,12 +17,11 @@ export default function FAQ() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Accordion 1</Typography>
+          <Typography>Do I need equipment for my training?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            We recommend to bring your own training equipment, but if you do not have it we can provide all equipment needed.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -33,12 +32,12 @@ export default function FAQ() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Accordion 2</Typography>
+          <Typography>Can I mix Muay Thai and Jiu Jitsu trainings?</Typography>
         </AccordionSummary>
+
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            You can attend all trainings. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -49,8 +48,17 @@ export default function FAQ() {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography>Disabled Accordion</Typography>
+          <Typography>What age you need to be to start trainings in your club?</Typography>
         </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography>
+            You need to have above 10 years old. 
+          </Typography>
+        </AccordionDetails>
+
+        
+
       </Accordion>
     </Box>
     </Container>
