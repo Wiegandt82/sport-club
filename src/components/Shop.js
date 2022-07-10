@@ -1,4 +1,4 @@
-import {  Container, Grid, LinearProgress, Typography } from '@mui/material'
+import {  Button, Container, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, LinearProgress, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import ShopCard from './ShopCards';
 
@@ -6,6 +6,23 @@ export default function Shop() {
 
 // use State to monitor the products data
 const [products, setProducts] = useState(null);
+
+const [showDeleteMsg, setShowDeleteMsg]= useState(false);
+const [deleteItem, setDeleteItem]= useState(false);
+
+const handleDelete = async(id) => {
+
+  setShowDeleteMsg(true);
+  if (deleteItem && !showDeleteMsg)
+  {
+    console.log("handleDelete()", "deleteItem " + deleteItem,"showDeleteMsg "+ showDeleteMsg);
+
+    await fetch('http://localhost:8000/products/' + id, {
+    method : 'DELETE'
+  }).then(  () => {const newProducts = products.filter(product => product.id != id);
+    setProducts(newProducts);})
+  }
+ }
 
 // use effect to get the data from the server api  
 // Make a state for pending loading data 
@@ -61,11 +78,24 @@ useEffect(() => {
             { products &&
                 products.map(product => (
                     <Grid item xs={12} md={6} lg={4} key={product.id}>
-                        <ShopCard product={product} />
+                        <ShopCard product={product} handleDelete={handleDelete}/>
                     </Grid>
                 ))
             }
         </Grid>
+        <Dialog
+           open= {showDeleteMsg}>
+          <DialogTitle >{"Delete product"}</DialogTitle>
+          <DialogContent>
+            <DialogContentText>{"Are you sure you want to delete this product"}</DialogContentText>
+            <DialogActions>
+              <Button onClick={ () => {setDeleteItem(false); setShowDeleteMsg(false);console.log("deleteItem " + deleteItem,"showDeleteMsg "+ showDeleteMsg);}} autoFocus>Disagree</Button>
+              <Button onClick={ () => {setDeleteItem(true); setShowDeleteMsg(false); console.log("deleteItem " + deleteItem,"showDeleteMsg "+ showDeleteMsg);}} >
+                Agree
+              </Button>
+            </DialogActions>
+          </DialogContent>
+        </Dialog>
     </Container>
   )
 }
