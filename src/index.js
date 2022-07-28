@@ -8,7 +8,6 @@ import AboutUs from './components/AboutUs';
 import Schedule from './components/Schedule';
 import FAQ from './components/FAQ';
 import Gallery from './components/Gallery';
-import LandingPage from './components/LandingPage';
 import Pricing from './components/Pricing';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
@@ -23,8 +22,7 @@ root.render(
     <AppLayout>
       <Routes>
         <Route path="/" element={<App />} />
-
-        <Route path="LandingPage" element={<LandingPage />} />
+        
         <Route path="AboutUs" element={<AboutUs />} />
         <Route path="Schedule" element={<Schedule />} />
         <Route path="FAQ" element={<FAQ />} />
