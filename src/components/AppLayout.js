@@ -15,6 +15,9 @@ export default function AppLayout({children}) {
   const drawerWidth = 140;
   let navigate = useNavigate();
   const [pageTitle, setpageTitle] = useState('Muay Thai Club');
+  
+
+
   const handleMenu = () => {
   }
   
