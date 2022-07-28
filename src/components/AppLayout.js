@@ -1,4 +1,4 @@
-import { AppBar, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material'
+import { AppBar, Avatar, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import EuroIcon from '@mui/icons-material/Euro';
 import InfoIcon from '@mui/icons-material/Info';
@@ -15,12 +15,16 @@ export default function AppLayout({children}) {
   const drawerWidth = 140;
   let navigate = useNavigate();
   const [pageTitle, setpageTitle] = useState('Muay Thai Club');
-  
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
-
-  const handleMenu = () => {
+  const handleMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
   }
   
+  const handleCloseUserMenu = (event) => {
+    setAnchorElUser(null);
+  };
+
   return (
     <div>
       <div>
@@ -30,68 +34,83 @@ export default function AppLayout({children}) {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div" sx={{flexGrow:1, marginRight: 150}}
->
+          >
             {pageTitle}
           </Typography>
-          
-          <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                
-                color="inherit"
-              >
-                <AccountCircleOutlined />
-              </IconButton>
+          <Tooltip title="Open settings">
+            <IconButton
+              sx={{ p: 0 }}
+              onClick={handleMenu} 
+            >
+              <Avatar alt="Remy Sharp" src={require('../images/Cafe-Owners.png')} />
+            </IconButton>
+          </Tooltip>
 
+          <Menu
+            sx={{ mt: '45px' }}
+            id="menu-appbar"
+            anchorEl={anchorElUser}
+            anchorOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+            }}
+            open={Boolean(anchorElUser)}
+            onClose={handleCloseUserMenu}
+          >
+            <MenuItem onClick={() => navigate('/SignUp')}>Sign Up</MenuItem>
+            <MenuItem onClick={() => navigate('/SignIn')}>Sign In</MenuItem>
+            <MenuItem onClick={() => navigate('/ContactUs')}>Contact Us</MenuItem>
+            <MenuItem onClick={() => navigate('/AboutUs')}>Log out</MenuItem>
+          </Menu>
         </Toolbar>
-        
       </AppBar>
+
       <Drawer
-        
         variant="permanent"
         anchor="left"
       >
-        <Toolbar />
+      <Toolbar />
+      <Divider />
+      <List>
+        <ListItem  
+        disablePadding
+        >
+          <ListItemButton onClick={ () => {navigate('/AboutUs'); setpageTitle('About Us')}}>
+            <ListItemIcon>
+              <InfoIcon />
+            </ListItemIcon>
+            <ListItemText primary={'About Us'} />
+          </ListItemButton>
+        </ListItem>
+
         <Divider />
-        <List>
-          <ListItem  
 
-          disablePadding
-          >
-            <ListItemButton onClick={ () => {navigate('/AboutUs'); setpageTitle('About Us')}}>
-              <ListItemIcon>
-                <InfoIcon />
-              </ListItemIcon>
-              <ListItemText primary={'About Us'} />
-            </ListItemButton>
-          </ListItem>
+        <ListItem  disablePadding>
+          <ListItemButton onClick={ () => {navigate('/Gallery'); setpageTitle('Gallery')}}>
+            <ListItemIcon>
+              <CollectionsIcon />
+            </ListItemIcon>
+            <ListItemText primary={'Gallery'} />
+          </ListItemButton>
+        </ListItem>
 
-          <Divider />
+        <Divider />
 
-          <ListItem  disablePadding>
-            <ListItemButton onClick={ () => {navigate('/Gallery'); setpageTitle('Gallery')}}>
-              <ListItemIcon>
-                <CollectionsIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Gallery'} />
-            </ListItemButton>
-          </ListItem>
+        <ListItem  disablePadding>
+          <ListItemButton onClick={ () => {navigate('/Schedule'); setpageTitle('Schedule')}}>
+            <ListItemIcon>
+              <CalendarMonthIcon />
+            </ListItemIcon>
+            <ListItemText primary={'Schedule'} />
+          </ListItemButton>
+        </ListItem>
 
-          <Divider />
-
-          <ListItem  disablePadding>
-            <ListItemButton onClick={ () => {navigate('/Schedule'); setpageTitle('Schedule')}}>
-              <ListItemIcon>
-                <CalendarMonthIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Schedule'} />
-            </ListItemButton>
-          </ListItem>
-
-          <Divider />
+        <Divider />
 
           <ListItem  disablePadding>
             <ListItemButton onClick={ () => {navigate('/Pricing'); setpageTitle('Pricing')}}>

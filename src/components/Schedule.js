@@ -7,7 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Container, Grid, Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -93,13 +93,23 @@ export default function CustomizedTables() {
               <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
                 Muay Thai
               </Typography>
+
               <Typography variant="body2" color="text.secondary" textAlign={'center'}>
                 Muay Thai has a long history in Thailand and is the country’s national sport. 
                 Referred to as “The Art of the Eight Limbs”. The hands, shins, elbows, 
                 and knees are all used extensively in this art. In Muay Thai, one has the ability to execute strikes using 
                 eight “points of contact,” as opposed to “two points” (fists) in Western boxing and “four points” (fists, feet) 
                 used in other martial arts.
+                <br/>
+                <Link href="https://en.wikipedia.org/wiki/Muay_Thai" 
+                underline="hover"
+                rel="noopener"
+                >
+                  {'More Info'}
+                </Link>
               </Typography>
+
+              
             </CardContent>
           </Card>
         </Grid>
@@ -122,6 +132,14 @@ export default function CustomizedTables() {
               It promotes the principle that a smaller, weaker person using leverage and proper technique can successfully 
               defend against a bigger, stronger assailant using joint-locks and chokeholds to defeat an opponent.
               BJJ can be trained for self defense, sport grappling tournaments and mixed martial arts competition.
+
+                <br/>
+                <Link href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" 
+                underline="hover"
+                rel="noopener"
+                >
+                  {'More Info'}
+                </Link>
               </Typography>
             </CardContent>
           </Card>
