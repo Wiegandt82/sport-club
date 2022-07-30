@@ -33,7 +33,7 @@ export default function SignIn() {
                     </Avatar>
 
                     <Typography component="h1" variant='h5'>
-                        Sign in 
+                        Sign In 
                     </Typography>
 
                     <Box component="form"  noValidate sx={{mt: 1}}>
@@ -66,18 +66,20 @@ export default function SignIn() {
                                 </TextField>
 
                             </Grid>
-
-                            <FormControlLabel
-                            control={<Checkbox value="remember" color="secondary" />}
-                            label ="Remember me" />
-                            <Button
-                                onClick={routeChange}
-                                fullWidth
-                                variant='contained'
-                                sx={{ mt: 3, mb: 2}}
-                                >
-                                Sign in 
-                            </Button>
+                            
+                            <Grid item xs={12}>
+                                <FormControlLabel
+                                control={<Checkbox value="remember" color="secondary" />}
+                                label ="Remember me" />
+                                <Button
+                                    onClick={routeChange}
+                                    fullWidth
+                                    variant='contained'
+                                    sx={{ mt: 3, mb: 2}}
+                                    >
+                                    Sign in 
+                                </Button>
+                            </Grid>
 
                             <Grid item>
                                 <Link to="/SignUp">

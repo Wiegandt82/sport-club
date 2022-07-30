@@ -20,7 +20,7 @@ export default function FAQ() {
           <Typography>What are the benefits of trainings?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'} >
             Positive effects from sport activity are weight lost, personal development and improvement in mental health.
           </Typography>
         </AccordionDetails>
@@ -35,7 +35,7 @@ export default function FAQ() {
           <Typography>Do I need equipment for my training?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             We recommend to bring your own training equipment, but if you do not have it we can provide all equipment needed.
           </Typography>
         </AccordionDetails>
@@ -51,7 +51,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             You can attend all trainings. 
           </Typography>
         </AccordionDetails>
@@ -67,7 +67,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             You need to have above 10 years old. 
           </Typography>
         </AccordionDetails>
@@ -83,7 +83,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             There is never a bad time to start training. Our professional coaches will make sure to adjust training for your needs. 
           </Typography>
         </AccordionDetails>
@@ -99,7 +99,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             Avoid eating 2 hours before training. 
           </Typography>
         </AccordionDetails>
@@ -115,7 +115,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             We recommend to bring your own water, as you will need to rehydrate yourself after training. 
           </Typography>
         </AccordionDetails>
@@ -127,11 +127,11 @@ export default function FAQ() {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography>Are there separate groups for man and females?</Typography>
+          <Typography >Are there separate groups for man and females?</Typography>
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             Nope man and females train on the same sessions. 
           </Typography>
         </AccordionDetails>
@@ -147,7 +147,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             As in every activity injuries happen. We have best facilities and coaches which will help you to avoid and if it happens we will assist you. 
           </Typography>
         </AccordionDetails>
@@ -163,7 +163,7 @@ export default function FAQ() {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography fontFamily={'Merriweather'}>
             A personal trainer can support you with personalized training to reach your fitness and technique goals. 
           </Typography>
         </AccordionDetails>

@@ -22,7 +22,6 @@ root.render(
     <AppLayout>
       <Routes>
         <Route path="/" element={<App />} />
-        
         <Route path="AboutUs" element={<AboutUs />} />
         <Route path="Schedule" element={<Schedule />} />
         <Route path="FAQ" element={<FAQ />} />

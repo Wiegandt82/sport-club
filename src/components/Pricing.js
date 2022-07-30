@@ -46,7 +46,7 @@ export default function Pricing() {
               component="img"
               height="350"
               image="https://youjiujitsu.com/wp-content/uploads/2019/05/15525975332_8379ec7aa9_b.jpg"
-              alt="coach"
+              alt="BJJ training"
               />
 
             <CardContent>
@@ -78,7 +78,7 @@ export default function Pricing() {
               component="img"
               height="350"
               image="https://www.tigermuaythai.com/wp-core/wp-content/uploads/2016/03/tmt-class-muay-thai-intermediate-01.jpg"
-              alt="coach"
+              alt="Muay Thai training"
               />
 
             <CardContent>
@@ -104,7 +104,7 @@ export default function Pricing() {
               component="img"
               height="350"
               image="https://cdn.onefc.com/wp-content/uploads/2019/06/Petchmorakot-AAA_8563.jpg"
-              alt="coach"
+              alt="individual training"
               />
 
             <CardContent>

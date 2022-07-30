@@ -34,7 +34,6 @@ useEffect( () => {
                     setProducts(data);
                     setIsLoading(false);
                           })
-
 }
     
 )

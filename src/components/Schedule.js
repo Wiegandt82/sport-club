@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Card, CardContent, CardMedia, Container, Grid, Link, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -120,7 +120,7 @@ export default function CustomizedTables() {
               component="img"
               height="350"
               image="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-brazilian-jiu-jitsu-21abb64f-ddd9-4ce1-9e37-cfebc277285a.jpg"
-              alt="Brazilian Jiu Jitsu match"
+              alt="BJJ match"
               />
 
             <CardContent>
@@ -136,7 +136,6 @@ export default function CustomizedTables() {
                 <br/>
                 <Link href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" 
                 underline="hover"
-                rel="noopener"
                 >
                   {'More Info'}
                 </Link>
