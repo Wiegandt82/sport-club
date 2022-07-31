@@ -1,4 +1,4 @@
-import {  Container, Grid, ImageList, ImageListItem } from '@mui/material'
+import {  Container, CssBaseline, Grid, ImageList, ImageListItem } from '@mui/material'
 
 import React from 'react'
 
@@ -55,24 +55,26 @@ export default function Gallery() {
   ];
 
   return (
-    <div>
-    <Container component ="main" maxWidth="md">
-       
-      <Grid item>
-        <ImageList sx={{mt:10, width: 650, height: 670 }} cols={3} rowHeight={164}>
-          {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
-          </ImageListItem>
-        ))}
-        </ImageList>
-      </Grid>
-    </Container>
-    </div>
+    
+      <Container component ="main" maxWidth="md">
+         <CssBaseline />
+        <Grid container>
+          <Grid item>
+            <ImageList sx={{mt:10, width: 650, height: 670 }} cols={3} rowHeight={164}>
+              {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+              </ImageListItem>
+            ))}
+            </ImageList>
+          </Grid>
+        </Grid>
+      </Container>
+    
   )
 }
