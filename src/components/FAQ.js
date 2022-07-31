@@ -8,7 +8,7 @@ import { Box, Container } from '@mui/material';
 
 export default function FAQ() {
   return (
-    <Container component ="main" maxWidth='md'>
+    <Container component ="main" maxWidth='md' sx={{mb:10}} >
 
     <Box sx={{mt:10}}>
     <Accordion >
