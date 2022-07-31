@@ -23,7 +23,7 @@ export default function ContactUs() {
                 fullWidth
                 required
                 sx={{ mt:2 }}
-                onCHange={(e) => {setName(e.target.value); console.log(name)}}
+                onChange={(e) => {setName(e.target.value); console.log(name)}}
                 >
             </TextField>
 
