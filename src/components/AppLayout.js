@@ -1,4 +1,4 @@
-import { AppBar, Avatar, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
+import { AppBar, Avatar, Box, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import EuroIcon from '@mui/icons-material/Euro';
 import InfoIcon from '@mui/icons-material/Info';
@@ -36,6 +36,7 @@ export default function AppLayout({children}) {
           >
             {pageTitle}
           </Typography>
+
           <Tooltip title="Open settings">
             <IconButton
               sx={{ p: 0 }}
@@ -67,6 +68,16 @@ export default function AppLayout({children}) {
             <MenuItem onClick={() => navigate('/AboutUs')}>Log out</MenuItem>
           </Menu>
         </Toolbar>
+      </AppBar>
+
+      <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+        <Toolbar>
+          <Box sx={{ flexGrow: 1 }}>
+          <Typography align="center">Copyright 2022</Typography>
+          </Box>
+        </Toolbar>
+
+        
       </AppBar>
 
       <Drawer

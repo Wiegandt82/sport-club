@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Pricing() {
   return (
-    <Container>
+    <Container sx={{mb:10}}>
       <Grid container 
         justifyContent="center"
         spacing={1}

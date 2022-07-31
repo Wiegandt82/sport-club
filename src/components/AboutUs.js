@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function AboutUs() {
   return (
-    <Container component ="main" maxWidth='md'>
+    <Container component ="main" maxWidth='md' sx={{mb:10}}>
 
       <CssBaseline />
         <Typography component="h2" variant="h4" color="secondary" align="center" sx={{mt:10}}>WILD GEESE Martial Arts</Typography>
