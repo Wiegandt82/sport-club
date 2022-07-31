@@ -3,7 +3,7 @@ import {createTheme, ThemeProvider} from '@mui/material/styles'
 import { Avatar, Container, CssBaseline, Box, Typography, TextField, Grid, FormControlLabel, Checkbox, Button } from '@mui/material';
 import {Link} from "react-router-dom"
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import PropTypes from 'prop-types';
+
 
 async function loginUser(credentials) {
     return fetch('http://localhost:8080/login', {
@@ -17,7 +17,7 @@ async function loginUser(credentials) {
    }
 
    export default function SignIn({ setToken }) {
-    const mytheme = createTheme();
+    const theme = createTheme();
 
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -36,7 +36,7 @@ async function loginUser(credentials) {
 
   return (
     <div> 
-        <ThemeProvider theme={mytheme}>
+        <ThemeProvider theme={theme}>
             <Container component ="main" maxWidth="xs" sx={{mb:10}}>
                 <CssBaseline /> 
                 <Box 
